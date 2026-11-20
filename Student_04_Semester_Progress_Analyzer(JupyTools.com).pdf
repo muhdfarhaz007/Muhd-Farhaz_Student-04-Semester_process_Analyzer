@@ -1,0 +1,1656 @@
+%PDF-1.3
+%ºß¬à
+3 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 4 0 R
+>>
+endobj
+4 0 obj
+<<
+/Length 2905
+>>
+stream
+0.5670000000000001 w
+0 G
+BT
+/F2 18 Tf
+20.6999999999999993 TL
+0 g
+42.5196850393700814 799.3703149606299121 Td
+(Student 04: Semester Progress Analyzer) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0 g
+42.5196850393700814 776.69314960629913 Td
+(Kernel: Python 3 \(ipykernel\)  •  Code cells: 9  •  Markdown cells: 9) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0 g
+42.5196850393700814 708.6616535433070112 Td
+(# Student 04: Semester Progress Analyzer) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0 g
+42.5196850393700814 691.6537795275589815 Td
+(## Project brief) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0 g
+42.5196850393700814 674.6459055118109518 Td
+(Calculate average; identify students improving or declining from Semester 1 to Semester 3; rank by) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0 g
+42.5196850393700814 657.6380314960629221 Td
+(average.) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0 g
+42.5196850393700814 623.6222834645668627 Td
+(**Instructions:** Run cells in order. Complete the TODO sections yourself. Explain your findings in your) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0 g
+42.5196850393700814 606.614409448818833 Td
+(own words.) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0 g
+42.5196850393700814 538.5829133858267141 Td
+(## 1. Import libraries) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0 g
+42.5196850393700814 521.5750393700786844 Td
+(NumPy is used for numerical calculations. Pandas is used to read, organise, filter and analyse table data.) Tj
+ET
+BT
+/F2 10 Tf
+11.5 TL
+0 g
+42.5196850393700814 453.5435433070865656 Td
+(In [6]:) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 436.5356692913385359 Td
+(import numpy as np) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 419.5277952755905062 Td
+(import pandas as pd) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0 g
+42.5196850393700814 351.4962992125983874 Td
+(## 2. Load your dataset) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0 g
+42.5196850393700814 334.4884251968503008 Td
+(A DataFrame is a table with rows and columns. Keep the CSV in the same folder as this notebook, or) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0 g
+42.5196850393700814 317.480551181102328 Td
+(update the path.) Tj
+ET
+BT
+/F2 10 Tf
+11.5 TL
+0 g
+42.5196850393700814 249.4490551181102092 Td
+(In [7]:) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 232.4411811023621794 Td
+(df = pd.read_csv\("Student_04_dataset.csv"\)) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 215.4333070866141497 Td
+(display\(df.head\(\)\)) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0 g
+42.5196850393700814 147.4018110236219172 Td
+(## 3. Explore the data) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0 g
+42.5196850393700814 130.3939370078738875 Td
+(Use `shape`, `columns`, `info\(\)`, `isnull\(\).sum\(\)` and `duplicated\(\).sum\(\)` to inspect the dataset.) Tj
+ET
+BT
+/F2 10 Tf
+11.5 TL
+0 g
+42.5196850393700814 62.3624409448817687 Td
+(In [8]:) Tj
+ET
+endstream
+endobj
+5 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 6 0 R
+>>
+endobj
+6 0 obj
+<<
+/Length 4186
+>>
+stream
+0.5670000000000001 w
+0 G
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 799.3703149606299121 Td
+(df = pd.read_csv\("Student_04_dataset.csv"\)) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 765.3545669291338527 Td
+(print\("First five records: "\)) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 748.346692913385823 Td
+(display\(df.head\(\)\)) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 731.3388188976377933 Td
+(print\("Dataset shape \(row, columns \):", df.shape\)) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 714.3309448818897636 Td
+(print\("column names:", list\(df.columns\)\)) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 680.3151968503937042 Td
+(df.info\(\)) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 663.3073228346456744 Td
+(Output:) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 646.2994488188976447 Td
+(First five records: ) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 612.2837007874015853 Td
+(Output:) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 595.2758267716535556 Td
+(Dataset shape \(row, columns \): \(20, 5\)) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 578.2679527559055259 Td
+(column names: ['Student_ID', 'Name', 'Semester_1', 'Semester_2', 'Semester_3']) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 561.2600787401574962 Td
+(<class 'pandas.core.frame.DataFrame'>) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 544.2522047244094665 Td
+(RangeIndex: 20 entries, 0 to 19) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 527.2443307086614368 Td
+(Data columns \(total 5 columns\):) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 510.2364566929133503 Td
+( #   Column      Non-Null Count  Dtype ) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 493.2285826771653205 Td
+(---  ------      --------------  ----- ) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 476.2207086614172908 Td
+( 0   Student_ID  20 non-null     int64 ) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 459.2128346456692611 Td
+( 1   Name        20 non-null     object) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 442.2049606299212314 Td
+( 2   Semester_1  20 non-null     int64 ) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 425.1970866141731449 Td
+( 3   Semester_2  20 non-null     int64 ) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 408.1892125984251152 Td
+( 4   Semester_3  20 non-null     int64 ) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 391.1813385826770855 Td
+(dtypes: int64\(4\), object\(1\)) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 374.1734645669290558 Td
+(memory usage: 928.0+ bytes) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0 g
+42.5196850393700814 306.1419685039369369 Td
+(## 4. NumPy practice) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0 g
+42.5196850393700814 289.1340944881889072 Td
+(Convert one or more numeric columns to a NumPy array. Try `np.mean\(\)`, `np.max\(\)` and `np.min\(\)`) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0 g
+42.5196850393700814 272.1262204724408775 Td
+(where appropriate.) Tj
+ET
+BT
+/F2 10 Tf
+11.5 TL
+0 g
+42.5196850393700814 204.0947244094487587 Td
+(In [10]:) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 187.086850393700729 Td
+(# Select the three semester marks columns.) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 170.0789763779526993 Td
+(marks = df[["Semester_1", "Semester_2", "Semester_3"]]) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 136.0632283464566399 Td
+(# Convert the Pandas table into a NumPy array.) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 119.0553543307086102 Td
+(marks_array = marks.to_numpy\(\)) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 102.0474803149605805 Td
+(print\("NumPy array:"\)) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 85.0396062992125508 Td
+(print\(marks_array\)) Tj
+ET
+endstream
+endobj
+7 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 8 0 R
+>>
+endobj
+8 0 obj
+<<
+/Length 4082
+>>
+stream
+0.5670000000000001 w
+0 G
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 799.3703149606299121 Td
+(# Calculate basic statistics with NumPy.) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 782.3624409448818824 Td
+(print\("\\nAverage of all marks:", np.mean\(marks_array\)\)) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 765.3545669291338527 Td
+(print\("Highest mark:", np.max\(marks_array\)\)) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 748.346692913385823 Td
+(print\("Lowest mark:", np.min\(marks_array\)\)) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 731.3388188976377933 Td
+(Output:) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 714.3309448818897636 Td
+(NumPy array:) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 697.3230708661417339 Td
+([[69 66 70]) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 680.3151968503937042 Td
+( [60 68 81]) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 663.3073228346456744 Td
+( [68 81 73]) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 646.2994488188976447 Td
+( [50 49 38]) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 629.291574803149615 Td
+( [56 42 62]) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 612.2837007874015853 Td
+( [49 48 33]) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 595.2758267716535556 Td
+( [39 27 26]) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 578.2679527559055259 Td
+( [39 26 32]) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 561.2600787401574962 Td
+( [39 56 56]) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 544.2522047244094665 Td
+( [52 68 66]) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 527.2443307086614368 Td
+( [69 62 77]) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 510.2364566929133503 Td
+( [50 65 76]) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 493.2285826771653205 Td
+( [47 38 29]) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 476.2207086614172908 Td
+( [77 89 96]) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 459.2128346456692611 Td
+( [62 73 87]) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 442.2049606299212314 Td
+( [81 69 60]) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 425.1970866141731449 Td
+( [38 48 54]) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 408.1892125984251152 Td
+( [41 41 38]) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 391.1813385826770855 Td
+( [47 66 79]) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 374.1734645669290558 Td
+( [43 55 51]]) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 340.1577165354329964 Td
+(Average of all marks: 56.61666666666667) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 323.1498425196849666 Td
+(Highest mark: 96) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 306.1419685039369369 Td
+(Lowest mark: 26) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0 g
+42.5196850393700814 238.1104724409448181 Td
+(## 5. Pandas analysis) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0 g
+42.5196850393700814 221.1025984251967884 Td
+(Create at least two calculated columns or useful summaries. Filter and sort rows to answer questions) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0 g
+42.5196850393700814 204.0947244094487587 Td
+(about your dataset.) Tj
+ET
+BT
+/F2 10 Tf
+11.5 TL
+0 g
+42.5196850393700814 136.0632283464566399 Td
+(In [11]:) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 119.0553543307086102 Td
+(analysis_df = df.copy\(\)) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 85.0396062992125508 Td
+(# Calculate the average for each student \(axis=1 means across columns\).) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 68.0317322834645211 Td
+(analysis_df["Average"] = analysis_df[) Tj
+ET
+endstream
+endobj
+9 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 10 0 R
+>>
+endobj
+10 0 obj
+<<
+/Length 4405
+>>
+stream
+0.5670000000000001 w
+0 G
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 799.3703149606299121 Td
+(    ["Semester_1", "Semester_2", "Semester_3"]) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 782.3624409448818824 Td
+(].mean\(axis=1\).round\(2\)) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 748.346692913385823 Td
+(# Compare Semester 3 marks with Semester 1 marks.) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 731.3388188976377933 Td
+(analysis_df["Change_S1_to_S3"] = \() Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 714.3309448818897636 Td
+(    analysis_df["Semester_3"] - analysis_df["Semester_1"]) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 697.3230708661417339 Td
+(\)) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 663.3073228346456744 Td
+(# Filter students whose marks improved.) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 646.2994488188976447 Td
+(improving_students = analysis_df[analysis_df["Change_S1_to_S3"] > 0]) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 629.291574803149615 Td
+(print\("Students who improved:"\)) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 612.2837007874015853 Td
+(display\(improving_students[["Name", "Semester_1", "Semester_3", "Change_S1_to_S3"]]\)) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 578.2679527559055259 Td
+(# Sort from highest average to lowest average.) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 561.2600787401574962 Td
+(ranked_students = analysis_df.sort_values\() Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 544.2522047244094665 Td
+(    by="Average", ascending=False) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 527.2443307086614368 Td
+(\).reset_index\(drop=True\)) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 510.2364566929133503 Td
+(ranked_students.insert\(0, "Rank", range\(1, len\(ranked_students\) + 1\)\)) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 493.2285826771653205 Td
+(display\(ranked_students\)) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 476.2207086614172908 Td
+(Output:) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 459.2128346456692611 Td
+(Students who improved:) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0 g
+42.5196850393700814 391.1813385826770855 Td
+(## 6. Your individual project challenge) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0 g
+42.5196850393700814 374.1734645669290558 Td
+(**Challenge:** Calculate average; identify students improving or declining from Semester 1 to Semester) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0 g
+42.5196850393700814 357.1655905511810261 Td
+(3; rank by average.) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0 g
+42.5196850393700814 323.1498425196849666 Td
+(Write your solution below and explain what the result means.) Tj
+ET
+BT
+/F2 10 Tf
+11.5 TL
+0 g
+42.5196850393700814 255.1183464566928478 Td
+(In [12]:) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 238.1104724409448181 Td
+(# STEP 1: Calculate every student's average across the three semesters.) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 221.1025984251967884 Td
+(result = df.copy\(\)) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 204.0947244094487587 Td
+(semester_columns = ["Semester_1", "Semester_2", "Semester_3"]) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 187.086850393700729 Td
+(result["Average"] = result[semester_columns].mean\(axis=1\).round\(2\)) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 153.0711023622046696 Td
+(# STEP 2: Find the change from Semester 1 to Semester 3.) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 136.0632283464566399 Td
+(# Positive = improved, negative = declined, zero = no change.) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 119.0553543307086102 Td
+(result["Change_S1_to_S3"] = result["Semester_3"] - result["Semester_1"]) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 85.0396062992125508 Td
+(# STEP 3: Convert the change into an easy-to-read progress label.) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 68.0317322834645211 Td
+(def check_progress\(change\):) Tj
+ET
+endstream
+endobj
+11 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 12 0 R
+>>
+endobj
+12 0 obj
+<<
+/Length 4252
+>>
+stream
+0.5670000000000001 w
+0 G
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 799.3703149606299121 Td
+(    if change > 0:) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 782.3624409448818824 Td
+(        return "Improving") Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 765.3545669291338527 Td
+(    elif change < 0:) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 748.346692913385823 Td
+(        return "Declining") Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 731.3388188976377933 Td
+(    else:) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 714.3309448818897636 Td
+(        return "No Change") Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 680.3151968503937042 Td
+(result["Progress"] = result["Change_S1_to_S3"].apply\(check_progress\)) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 646.2994488188976447 Td
+(# STEP 4: Rank students. The highest average receives Rank 1.) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 629.291574803149615 Td
+(result = result.sort_values\() Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 612.2837007874015853 Td
+(    by="Average", ascending=False) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 595.2758267716535556 Td
+(\).reset_index\(drop=True\)) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 578.2679527559055259 Td
+(result.insert\(0, "Rank", range\(1, len\(result\) + 1\)\)) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 544.2522047244094665 Td
+(print\("FINAL STUDENT PROGRESS REPORT"\)) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 527.2443307086614368 Td
+(display\(result\)) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 493.2285826771653205 Td
+(# STEP 5: Print useful findings.) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 476.2207086614172908 Td
+(print\("Improving students:", \(result["Progress"] == "Improving"\).sum\(\)\)) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 459.2128346456692611 Td
+(print\("Declining students:", \(result["Progress"] == "Declining"\).sum\(\)\)) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 442.2049606299212314 Td
+(print\("No change:", \(result["Progress"] == "No Change"\).sum\(\)\)) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 408.1892125984251152 Td
+(print\("\\nHighest-ranked student:"\)) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 391.1813385826770855 Td
+(display\(result.head\(1\)[["Rank", "Name", "Average", "Change_S1_to_S3", "Progress"]]\)) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 357.1655905511810261 Td
+(print\("Lowest-ranked student:"\)) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 340.1577165354329964 Td
+(display\(result.tail\(1\)[["Rank", "Name", "Average", "Change_S1_to_S3", "Progress"]]\)) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 306.1419685039369369 Td
+(print\("\\nAverage mark in each semester:"\)) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 289.1340944881889072 Td
+(display\(df[semester_columns].mean\(\).round\(2\)\)) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 272.1262204724408775 Td
+(Output:) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 255.1183464566928478 Td
+(FINAL STUDENT PROGRESS REPORT) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 221.1025984251967884 Td
+(Output:) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 204.0947244094487587 Td
+(Improving students: 13) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 187.086850393700729 Td
+(Declining students: 7) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 170.0789763779526993 Td
+(No change: 0) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 136.0632283464566399 Td
+(Highest-ranked student:) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 102.0474803149605805 Td
+(Output:) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 85.0396062992125508 Td
+(Lowest-ranked student:) Tj
+ET
+endstream
+endobj
+13 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 14 0 R
+>>
+endobj
+14 0 obj
+<<
+/Length 3968
+>>
+stream
+0.5670000000000001 w
+0 G
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 799.3703149606299121 Td
+(Output:) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 765.3545669291338527 Td
+(Average mark in each semester:) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 731.3388188976377933 Td
+(Output:) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 714.3309448818897636 Td
+(Semester_1    53.80) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 697.3230708661417339 Td
+(Semester_2    56.85) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 680.3151968503937042 Td
+(Semester_3    59.20) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 663.3073228346456744 Td
+(dtype: float64) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0 g
+42.5196850393700814 612.2837007874015853 Td
+(## 7. Export your report) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0 g
+42.5196850393700814 595.2758267716535556 Td
+(Use `to_csv\(..., index=False\)` to save your cleaned or analysed DataFrame. Create an `output` folder if) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0 g
+42.5196850393700814 578.2679527559055259 Td
+(needed.) Tj
+ET
+BT
+/F2 10 Tf
+11.5 TL
+0 g
+42.5196850393700814 510.2364566929133503 Td
+(In [13]:) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 493.2285826771653205 Td
+(result.to_csv\("Student_04_Final_Report.csv", index=False\)) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 476.2207086614172908 Td
+(print\("Saved: Student_04_Final_Report.csv"\)) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 459.2128346456692611 Td
+(Output:) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 442.2049606299212314 Td
+(Saved: Student_04_Final_Report.csv) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0 g
+42.5196850393700814 374.1734645669290558 Td
+(## 8. Findings and reflection) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0 g
+42.5196850393700814 357.1655905511810261 Td
+(In your own words, answer:) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0 g
+42.5196850393700814 340.1577165354329964 Td
+(1. What question did your analysis answer?) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0 g
+42.5196850393700814 323.1498425196849666 Td
+(2. What is one important finding?) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0 g
+42.5196850393700814 306.1419685039369369 Td
+(3. Which NumPy function did you use and why?) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0 g
+42.5196850393700814 289.1340944881889072 Td
+(4. Which Pandas operation was most useful?) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0 g
+42.5196850393700814 272.1262204724408775 Td
+(5. What would you improve if you had more time?) Tj
+ET
+BT
+/F2 10 Tf
+11.5 TL
+0 g
+42.5196850393700814 204.0947244094487587 Td
+(In [15]:) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 187.086850393700729 Td
+(GITHUB LINK--> https://github.com/muhdfarhaz007/Muhd-Farhaz_Student-04-Semester_process_Analyzer) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 170.0789763779526993 Td
+(Error:) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0 g
+42.5196850393700814 153.0711023622046696 Td
+(SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers \(1165393105.py, line 1\)) Tj
+ET
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0 g
+42.5196850393700814 136.0632283464566399 Td
+(  Cell In[15], line 1) Tj
+ET
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0 g
+42.5196850393700814 119.0553543307086102 Td
+(    GITHUB LINK--> https://github.com/muhdfarhaz007/Muhd-Farhaz_Student-04-Semester_process_Analyzer) Tj
+ET
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0 g
+42.5196850393700814 102.0474803149605805 Td
+(                                                                        ^) Tj
+ET
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0 g
+42.5196850393700814 85.0396062992125508 Td
+(SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers) Tj
+ET
+endstream
+endobj
+15 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 16 0 R
+>>
+endobj
+16 0 obj
+<<
+/Length 152
+>>
+stream
+0.5670000000000001 w
+0 G
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+42.5196850393700814 799.3703149606299121 Td
+(Generated by Jupy Tools · 11/20/2026) Tj
+ET
+endstream
+endobj
+1 0 obj
+<</Type /Pages
+/Kids [3 0 R 5 0 R 7 0 R 9 0 R 11 0 R 13 0 R 15 0 R ]
+/Count 7
+>>
+endobj
+17 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+18 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+19 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+20 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+21 0 obj
+<<
+/Type /Font
+/BaseFont /Courier
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+22 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+23 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+24 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+25 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Roman
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+26 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+27 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Italic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+28 0 obj
+<<
+/Type /Font
+/BaseFont /Times-BoldItalic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+29 0 obj
+<<
+/Type /Font
+/BaseFont /ZapfDingbats
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+30 0 obj
+<<
+/Type /Font
+/BaseFont /Symbol
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+2 0 obj
+<<
+/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+/Font <<
+/F1 17 0 R
+/F2 18 0 R
+/F3 19 0 R
+/F4 20 0 R
+/F5 21 0 R
+/F6 22 0 R
+/F7 23 0 R
+/F8 24 0 R
+/F9 25 0 R
+/F10 26 0 R
+/F11 27 0 R
+/F12 28 0 R
+/F13 29 0 R
+/F14 30 0 R
+>>
+/XObject <<
+>>
+>>
+endobj
+31 0 obj
+<<
+/Producer (jsPDF 4.2.1)
+/CreationDate (D:20261120093858-00'00')
+>>
+endobj
+32 0 obj
+<<
+/Type /Catalog
+/Pages 1 0 R
+/OpenAction [3 0 R /FitH null]
+/PageLayout /OneColumn
+>>
+endobj
+xref
+0 33
+0000000000 65535 f 
+0000025298 00000 n 
+0000027159 00000 n 
+0000000015 00000 n 
+0000000152 00000 n 
+0000003109 00000 n 
+0000003246 00000 n 
+0000007484 00000 n 
+0000007621 00000 n 
+0000011755 00000 n 
+0000011893 00000 n 
+0000016351 00000 n 
+0000016490 00000 n 
+0000020795 00000 n 
+0000020934 00000 n 
+0000024955 00000 n 
+0000025094 00000 n 
+0000025394 00000 n 
+0000025520 00000 n 
+0000025651 00000 n 
+0000025785 00000 n 
+0000025923 00000 n 
+0000026047 00000 n 
+0000026176 00000 n 
+0000026308 00000 n 
+0000026444 00000 n 
+0000026572 00000 n 
+0000026699 00000 n 
+0000026828 00000 n 
+0000026961 00000 n 
+0000027063 00000 n 
+0000027412 00000 n 
+0000027498 00000 n 
+trailer
+<<
+/Size 33
+/Root 32 0 R
+/Info 31 0 R
+/ID [ <4445F4A458699EB9BAA0818A5275A9C3> <4445F4A458699EB9BAA0818A5275A9C3> ]
+>>
+startxref
+27602
+%%EOF
